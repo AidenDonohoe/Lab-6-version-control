@@ -6,6 +6,10 @@ def password_encoder(password):
     return result
 
 
+
+
+
+
 if __name__ == '__main__':
     while(True):
         print('-------------')
@@ -19,7 +23,7 @@ if __name__ == '__main__':
             encoded_password = password_encoder(user_password)
             print('Your password has been encoded and stored!')
         elif user_choice == 2:
-            print('The encoded password is ' + password_encoder(user_password) + ', and the original password is', user_password)
+            print('The decoded password is ' + password_decoder(encoded_password) + ', and the original password is', user_password)
         else:
             break
 
