@@ -2,7 +2,7 @@
 def password_encoder(password):
     result = ""
     for i in range(0, len(password)):
-        result += str(int(password[i])+3)
+        result += str((int(password[i])+3)%10)
     return result
 
 
